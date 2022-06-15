@@ -170,9 +170,10 @@ print(instanceDateAndTime.printTimeAsString())
 //- վերադաձնել  կետի տվյալները այս ֆորմատով a(x: 1, y: 4)
 //- տպի  կետի տվյալները այս ֆորմատով a(x: 1, y: 4)
 
+
 struct MyPoint {
-    var x: Int = 0
-    var y: Int = 0
+    var x: String
+    var y: String
     var name:String = "l"
     
     func changeXproperty(){
@@ -180,11 +181,4 @@ struct MyPoint {
     }
 }
 
-var firstInstance = MyPoint(x: 0, y: 0, name: "A")
-
-firstInstance.x = 1
-firstInstance.y = 4
-firstInstance.name = "a"
-
-//print(firstInstance)
-print(firstInstance)
+var firstInstance = MyPoint(x: "x", y: "y", name: "name")
